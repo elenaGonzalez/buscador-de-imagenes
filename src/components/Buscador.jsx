@@ -9,6 +9,7 @@ class Buscador extends Component{
         const termino= this.busquedaRef.current.value;
         //lo enviamos al componente principal
         this.props.datosBusqueda(termino);
+        console.info('finalizó una busqueda...')
     }
 
     render(){
