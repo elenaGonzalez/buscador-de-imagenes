@@ -46,7 +46,7 @@ class App extends Component{
     }
     consultarApi= () =>{
         const pagina= this.state.pagina;
-        const url= `https://pixabay.com/api/?key=17530945-8f8808ed1034edb509011f11d&q=${this.state.termino}&per_page=30&page=${pagina}`;
+        const url= `https://pixabay.com/api/?key={coloca-tu-api-key}&q=${this.state.termino}&per_page=30&page=${pagina}`;
         //console.log(url);
         fetch(url)
         .then(res => res.json())
